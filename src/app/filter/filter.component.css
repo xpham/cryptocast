@@ -1,0 +1,10 @@
+th, td {
+  white-space: nowrap;
+  border-right: darkgrey 1px solid;
+  padding-right: 5px;
+}
+th {
+  border: darkgrey 1px solid;
+  padding-bottom: 5px;
+  text-align: left;
+}

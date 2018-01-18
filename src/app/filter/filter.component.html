@@ -1,0 +1,11 @@
+<table>
+  <th>rank</th><th>id</th><th>name</th><th>symbol</th><th>percent change 1h</th><th>percent change 24h</th><th>percent change 7d</th><th>price usd</th><th>price btc</th>
+  <th>market cap usd</th><th>24h volume usd</th><th>circulating supply</th><th>max supply</th><th>total supply</th><th>last updated</th><th>url</th>
+
+  <tr id="currenciesTable" *ngFor='let c of mapCurrencies'>
+    <td>{{c['rank']}}</td><td>{{c['id']}}</td><td>{{c['name']}}</td><td>{{c['symbol']}}</td><td>{{c['percent_change_1h']}}</td><td>{{c['percent_change_24h']}}</td>
+    <td>{{c['percent_change_7d']}}</td><td>{{c['price_usd']}}</td><td>{{c['price_btc']}}</td><td>{{c['market_cap_usd']}}</td><td>{{c['24h_volume_usd']}}</td>
+    <td>{{c['available_supply']}}</td><td>{{c['max_supply']}}</td><td>{{c['total_supply']}}</td><td>{{c['last_updated'] * 1000 | date: 'dd/MM/yyyy HH:mm:ss'}}</td>
+    <td>https://coinmarketcap.com/currencies/{{c['id']}}/</td>
+  </tr>
+</table>
